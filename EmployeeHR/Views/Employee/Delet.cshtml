@@ -1,0 +1,49 @@
+﻿@model EmployeeModel
+@{
+    ViewData["Title"] = "Delet";
+}
+
+  
+Holw dwlwt-page
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+
+
+            <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+
+            <th>	@Html.DisplayNameFor(model => model.LastName)</th>
+
+
+            <th>@Html.DisplayNameFor(model => model.DOB)</th>
+
+
+            <th>@Html.DisplayNameFor(model => model.HiringDate)</th>
+
+
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr class="table-danger">
+            <th scope="row">1</th>
+            <td>@Html.DisplayFor(model => model.Id)</td>
+            <td>@Html.DisplayFor(model => model.FirstName)</td>
+            <td>@Html.DisplayFor(model => model.LastName)</td>
+            <td>@Html.DisplayFor(model => model.Email)</td>
+
+        </tr>
+     
+    </tbody>
+</table>
+
+
+<form asp-action="Delet" >
+
+    <input value="Delet" class="btn btn-danger" type="submit" />
+  
+
+</form>
